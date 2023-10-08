@@ -19,8 +19,15 @@ public class P0108_ConvertSortedArrayToBinarySearchTree {
         return createBST(numbers, 0, numbers.length - 1);
     }
 
-    private static TreeNode createBST(int[] numbers, int i, int i1) {
-        return new TreeNode();
+    private static TreeNode createBST(int[] numbers, int low, int high) {
+        if (low > high) {
+            return null;
+        }
+        int mid = low + (high - low) / 2;
+        TreeNode root = new TreeNode(numbers[mid]);
+        root.left = createBST(numbers, low, mid - 1);
+        root.right = createBST(numbers, mid + 1, high);
+        return root;
     }
 
     private static class TreeNode {
