@@ -14,6 +14,9 @@ public class P0014_LongestCommonPrefix {
     }
 
     public static String getResult(String[] val) {
+        if (val.length > 1) {
+
+        }
         return "";
     }
 }
