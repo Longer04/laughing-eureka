@@ -19,6 +19,12 @@ public class P0009_PalindromeNumber {
     }
 
     public static boolean getResult(int val) {
-        return false;
+        if (val < 0 || val != 0 && val % 10 == 0) return false;
+        int check = 0;
+        while (val > check) {
+            check = check * 10 + val % 10;
+            val /= 10;
+        }
+        return (val == check || val == check / 10);
     }
 }
