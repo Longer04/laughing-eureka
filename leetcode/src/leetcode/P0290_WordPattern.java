@@ -16,7 +16,7 @@ public class P0290_WordPattern {
 
         final String pattern = "abba";
         final String validString = "dog cat cat fish";
-        final String invalidString = "dog dog dog dog";
+        final String invalidString = "dog cat dog dog";
 
         boolean result = getResult(pattern, validString);
         System.out.println(result);
