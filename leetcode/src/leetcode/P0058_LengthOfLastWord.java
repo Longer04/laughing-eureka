@@ -17,7 +17,7 @@ public class P0058_LengthOfLastWord {
     // Timme O(n), Space O(1)
     public static int getResult(String input) {
         int spacePosition = 0;
-        if (input == null || input.length() == 0) {
+        if (input == null || input.isEmpty()) {
             return 0;
         } else {
             for (int i = input.length() - 1; i > 0; i--) {

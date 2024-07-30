@@ -6,7 +6,7 @@ package leetcode;
 public class P0009_PalindromeNumber {
 
     public static void main(String... args) {
-        int valid = 121;
+        int valid = 1235321;
         int invalid = 123;
 
         boolean result1 = getResult(valid);
